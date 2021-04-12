@@ -38,3 +38,15 @@ docker-compose exec app bash
 
 docker-compose exec app bash
 php artisan migrate
+
+Git 系
+
+```
+
+git status
+git add .
+git status
+git commit -m "feat create docker db container"
+git log
+
+```
