@@ -28,3 +28,13 @@ php artisan key:generate
 php artisan config:cache
 php artisan migrate:fresh
 ```
+
+php artisan make:model -m
+
+docker-compose up -d --build
+
+クジラの中
+docker-compose exec app bash
+
+docker-compose exec app bash
+php artisan migrate
