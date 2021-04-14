@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Anniversary;
 use Illuminate\Http\Request;
 
-class AniversaryController extends Controller
+class AnniversaryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class AniversaryController extends Controller
      */
     public function index()
     {
-        //
+        $items=Anniversary::all();
+        return $items->toArray();
     }
 
     /**
@@ -45,7 +47,8 @@ class AniversaryController extends Controller
      */
     public function show($id)
     {
-        //
+        $items=Anniversary::find($id);
+        return $items->toArray();
     }
 
     /**
