@@ -18,7 +18,7 @@ class CreateAnniversariesTable extends Migration
             $table->bigInteger("user_id")->references('id')->on('users')->comment("ユーザーID");
             $table->bigInteger("people_id")->references('id')->on('people')->comment("人物ID");
             $table->string("genre")->comment("記念日ジャンル");
-            $table->date("date");
+            $table->bigInteger("date");
             $table->string("memo");
             $table->uuid('anniversary_hash')->unique()->comment('記念日のUUID');
             $table->timestamps();

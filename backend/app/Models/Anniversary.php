@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Anniversary extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'user_id', 'people_id','genre','date' ,'memo','anniversary_hash'
+    ];
 }
