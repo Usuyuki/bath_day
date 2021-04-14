@@ -59,7 +59,8 @@ class AnniversaryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $items=Anniversary::find($id);
+        return $items->toArray();
     }
 
     /**

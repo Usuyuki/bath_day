@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('rest',AnniversaryController::class);
+Route::apiResource('rest',AnniversaryController::class);
